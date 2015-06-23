@@ -7,15 +7,33 @@
   background-size: auto cover;
   background: top center scroll no-repeat; }
 
+.section-padding {
+  padding: 20px 0; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 16px; }
+
+a {
+  text-decoration: none !important; }
+
+a:hover {
+  color: #ffffff !important; }
+
+.btn-blk {
+  padding: 10px 20px;
+  background-color: #313335;
+  color: #ffffff; }
+
 /* LAYOUT */
 /*introduction*/
 #introduction {
-  background-color: #f0eee5;
-  padding-top: 20px; }
+  background-color: #f0eee5; }
 
 /*call-to-action*/
 .call-to-action {
-  height: 330px;
   background-color: #efc337; }
 
 /* NAVIGATION */

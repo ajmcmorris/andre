@@ -5,6 +5,8 @@ $cover:cover;
 $cta-height:330px;
 $yellow:#efc337;
 $beige:#f0eee5;
+$black:#313335;
+$white:#ffffff;
 
 @mixin background-size($cover){
 	-webkit-background-size: $cover;
@@ -16,16 +18,33 @@ $beige:#f0eee5;
 	@include background-size($cover);
 	background:top center scroll no-repeat;
 }
+.section-padding{
+	padding: 20px 0;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 16px;
+}
+a{
+	text-decoration: none !important;
+}
+a:hover{
+	color: $white !important;
+}
+.btn-blk{
+	padding: 10px 20px;
+	background-color: $black;
+	color: $white;
+}
 /* LAYOUT */
-
 	/*introduction*/
 #introduction{
 	background-color: $beige;
-	padding-top: 20px;
 }
 	/*call-to-action*/
 .call-to-action{
-	height: $cta-height;
 	background-color: $yellow;
 }
 /* NAVIGATION */
