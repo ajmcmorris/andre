@@ -1,0 +1,56 @@
+/* GLOBAL */
+/*variables*/
+.bkg-position {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto cover;
+  background: top center scroll no-repeat; }
+
+/* LAYOUT */
+/*introduction*/
+#introduction {
+  background-color: #f0eee5;
+  padding-top: 20px; }
+
+/*call-to-action*/
+.call-to-action {
+  height: 330px;
+  background-color: #efc337; }
+
+/* NAVIGATION */
+.navbar {
+  margin-bottom: 0 !important; }
+
+/* VIDEO */
+/*Media Queries*/
+/*Small Devices*/
+@media (min-width: 768px) {
+  /* Styles */ }
+/* End of Media Query */
+/*Medium Devices*/
+@media (min-width: 992px) {
+  /* Styles */ }
+/* End of Media Query */
+/*Large Devices*/
+@media (min-width: 1200px) {
+  /* Styles */ }
+/* End of Media Query */
+/*Extra Large Devices*/
+@media (min-width: 1824px) {
+  /* Styles */ }
+/* End of Media Query */
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
+
+/*# sourceMappingURL=styles.css.map */
