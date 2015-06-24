@@ -100,10 +100,15 @@ a {
 
 /*footer*/
 hr {
-  border: 1px solid #f0eee5; }
+  border: 1px solid #73797e; }
 
-footer aside h3 {
-  font-size: 13px; }
+footer {
+  background-image: url("../img/toronto-mobile.jpg") !important;
+  height: 460px; }
+  footer aside h3 {
+    font-size: 13px; }
+    footer aside h3 .links {
+      color: #ffffff !important; }
 
 /* NAVIGATION */
 /* BOOTSTRAP RESETS */

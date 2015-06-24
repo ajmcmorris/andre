@@ -130,12 +130,19 @@ a{
 }
 	/*footer*/
 hr{
-	border: 1px solid $beige;
+	border: 1px solid $grey;
 }
 footer{
+	background-image: url("../img/toronto-mobile.jpg") !important;
+	height: 460px;
 	aside{
 		h3{
 			font-size: 13px;
+			
+				.links{
+					color: $white !important;
+				}	
+			
 		}
 	}
 }
