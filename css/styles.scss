@@ -31,6 +31,8 @@ $yellow:#efc337;
 $beige:#f0eee5;
 $black:#313335;
 $white:#ffffff;
+$grey:#73797e;
+
 $btn-padding:10px 20px;
 $nor:'norwesterregular';
 $didot:'Didot-HTF-L24-Light-Ital';
@@ -41,13 +43,7 @@ $didot:'Didot-HTF-L24-Light-Ital';
 	-o-background-size: $cover;
 	background-size: auto $cover;
 }
-.bkg-position{
-	@include background-size($cover);
-	background:top center scroll no-repeat;
-}
-.section-padding{
-	padding: 20px 0;
-}
+	/*font styles / colours*/
 .wht-font{
 	color: $white;
 }
@@ -55,8 +51,53 @@ $didot:'Didot-HTF-L24-Light-Ital';
 	font-family: $nor;
 	letter-spacing: 1px;
 }
+.grey-font{
+	color: $grey;
+}
+.blk-font{
+	color: $black;
+}
 .didot-font{
 	font-family: $didot;
+}
+	/*button styles*/
+.btn-blk{
+	padding: $btn-padding;
+	background-color: $black;
+	color: $white;
+}
+.btn-blk:hover{
+	color: $white !important;
+}
+.btn-gry{
+	padding: $btn-padding;
+	border: $grey 2px solid;
+	color: $grey;
+}
+.btn-gry:hover{
+	color: $grey !important;
+}
+.btn-ylw{
+	padding: $btn-padding;
+	background-color: $yellow;
+	color: $black;
+}
+.btn-ylw:hover{
+	color: $black !important;
+}
+	/*general*/
+.bkg-position{
+	@include background-size($cover);
+	background:top center scroll no-repeat;
+}
+.section-padding{
+	padding: 20px 0;
+}
+.headings{
+	margin: 25px 0;
+}
+.img-spacing{
+	padding: 0 0 !important;
 }
 h2{
 	font-size: 20px;
@@ -67,34 +108,62 @@ h3{
 a{
 	text-decoration: none !important;
 }
-a:hover{
-	color: $white !important;
-}
-.btn-blk{
-	padding: $btn-padding;
-	background-color: $black;
-	color: $white;
-}
-.btn-ylw{
-	padding: $btn-padding;
-	background-color: $yellow;
-	color: $white;
-}
+
 /* LAYOUT */
 	/*introduction*/
 #introduction{
 	background-color: $beige;
+		h1{
+			margin-top:0px !important;
+		}
+		h3{
+			font-size: 13px;
+		}
 }
+	/*portfolio-preview*/
+#portfolio{
+	margin: 25px 0;
+}	
 	/*call-to-action*/
 #about{
 	background-color: $yellow;
 }
-/* NAVIGATION */
-.navbar{
-	margin-bottom: 0 !important;
+	/*footer*/
+hr{
+	border: 1px solid $beige;
 }
-/* VIDEO */
+footer{
+	aside{
+		h3{
+			font-size: 13px;
+		}
+	}
+}
+/* NAVIGATION */
+/* BOOTSTRAP RESETS */
+.navbar {
+  margin-bottom: 0px !important; }
 
+.navbar-default {
+  background-color: $beige !important;
+  border-color: transparent !important; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: $beige; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $grey; }
+
+.navbar-default .navbar-toggle {
+  border-color: $beige; }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: $grey;
+  background-color:$beige; 
+}
 /*Media Queries*/
 
 /*Small Devices*/
