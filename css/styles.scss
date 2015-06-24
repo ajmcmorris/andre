@@ -1,4 +1,28 @@
 
+/*FONTS*/
+
+@font-face {
+  font-family: 'Didot-HTF-L24-Light-Ital';
+  src: url('Didot-HTF-L24-Light-Ital.eot') format('embedded-opentype');
+  src: url('../fonts/exmouth_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Didot-HTF-L24-Light-Ital.woff') format('woff'), 
+         url('Didot-HTF-L24-Light-Ital.ttf') format('truetype'), 
+         url('Didot-HTF-L24-Light-Ital.svg#Didot-HTF-L24-Light-Ital') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'norwesterregular';
+    src: url('../fonts/norwester-regular-webfont.eot');
+    src: url('../fonts/norwester-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/norwester-regular-webfont.woff2') format('woff2'),
+         url('../fonts/norwester-regular-webfont.woff') format('woff'),
+         url('../fonts/norwester-regular-webfont.ttf') format('truetype'),
+         url('../fonts/norwester-regular-webfont.svg#norwesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* GLOBAL */
 	/*variables*/
 $cover:cover;
@@ -7,6 +31,9 @@ $yellow:#efc337;
 $beige:#f0eee5;
 $black:#313335;
 $white:#ffffff;
+$btn-padding:10px 20px;
+$nor:'norwesterregular';
+$didot:'Didot-HTF-L24-Light-Ital';
 
 @mixin background-size($cover){
 	-webkit-background-size: $cover;
@@ -21,6 +48,16 @@ $white:#ffffff;
 .section-padding{
 	padding: 20px 0;
 }
+.wht-font{
+	color: $white;
+}
+.nor-font{
+	font-family: $nor;
+	letter-spacing: 1px;
+}
+.didot-font{
+	font-family: $didot;
+}
 h2{
 	font-size: 20px;
 }
@@ -34,8 +71,13 @@ a:hover{
 	color: $white !important;
 }
 .btn-blk{
-	padding: 10px 20px;
+	padding: $btn-padding;
 	background-color: $black;
+	color: $white;
+}
+.btn-ylw{
+	padding: $btn-padding;
+	background-color: $yellow;
 	color: $white;
 }
 /* LAYOUT */
@@ -44,7 +86,7 @@ a:hover{
 	background-color: $beige;
 }
 	/*call-to-action*/
-.call-to-action{
+#about{
 	background-color: $yellow;
 }
 /* NAVIGATION */

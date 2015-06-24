@@ -1,3 +1,16 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Didot-HTF-L24-Light-Ital';
+  src: url("Didot-HTF-L24-Light-Ital.eot") format("embedded-opentype");
+  src: url("../fonts/exmouth_-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Didot-HTF-L24-Light-Ital.woff") format("woff"), url("Didot-HTF-L24-Light-Ital.ttf") format("truetype"), url("Didot-HTF-L24-Light-Ital.svg#Didot-HTF-L24-Light-Ital") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'norwesterregular';
+  src: url("../fonts/norwester-regular-webfont.eot");
+  src: url("../fonts/norwester-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/norwester-regular-webfont.woff2") format("woff2"), url("../fonts/norwester-regular-webfont.woff") format("woff"), url("../fonts/norwester-regular-webfont.ttf") format("truetype"), url("../fonts/norwester-regular-webfont.svg#norwesterregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* GLOBAL */
 /*variables*/
 .bkg-position {
@@ -9,6 +22,16 @@
 
 .section-padding {
   padding: 20px 0; }
+
+.wht-font {
+  color: #ffffff; }
+
+.nor-font {
+  font-family: "norwesterregular";
+  letter-spacing: 1px; }
+
+.didot-font {
+  font-family: "Didot-HTF-L24-Light-Ital"; }
 
 h2 {
   font-size: 20px; }
@@ -27,13 +50,18 @@ a:hover {
   background-color: #313335;
   color: #ffffff; }
 
+.btn-ylw {
+  padding: 10px 20px;
+  background-color: #efc337;
+  color: #ffffff; }
+
 /* LAYOUT */
 /*introduction*/
 #introduction {
   background-color: #f0eee5; }
 
 /*call-to-action*/
-.call-to-action {
+#about {
   background-color: #efc337; }
 
 /* NAVIGATION */
