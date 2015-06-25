@@ -22,6 +22,9 @@
   letter-spacing: 1px;
   text-transform: capitalize; }
 
+.bold {
+  font-weight: 600; }
+
 .grey-font {
   color: #73797e; }
 
