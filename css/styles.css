@@ -19,7 +19,8 @@
 
 .nor-font {
   font-family: "norwesterregular";
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-transform: capitalize; }
 
 .grey-font {
   color: #73797e; }
@@ -61,7 +62,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: auto cover;
-  background: top center scroll no-repeat; }
+  background: bottom center scroll no-repeat; }
 
 .section-padding {
   padding: 20px 0; }
@@ -94,9 +95,12 @@ a {
 #portfolio {
   margin: 25px 0; }
 
-/*call-to-action*/
+/*about*/
 #about {
   background-color: #efc337; }
+
+#about-me {
+  margin-top: 25px; }
 
 /*footer*/
 hr {
@@ -104,11 +108,13 @@ hr {
 
 footer {
   background-image: url("../img/toronto-mobile.jpg") !important;
-  height: 460px; }
-  footer aside h3 {
-    font-size: 13px; }
-    footer aside h3 .links {
-      color: #ffffff !important; }
+  height: 371px; }
+  footer aside {
+    padding: 20px 0 0 0; }
+    footer aside h3 {
+      font-size: 13px; }
+      footer aside h3 .links {
+        color: #ffffff !important; }
 
 /* NAVIGATION */
 /* BOOTSTRAP RESETS */
@@ -138,7 +144,55 @@ footer {
 /*Media Queries*/
 /*Small Devices*/
 @media (min-width: 768px) {
-  /* Styles */ }
+  /* Styles */
+  /*header*/
+  header {
+    background-image: url("../img/small-bkg.jpg") !important;
+    height: 475px; }
+    header #introduction {
+      background-color: transparent;
+      color: #ffffff !important;
+      margin-top: 70px; }
+      header #introduction h1 {
+        font-size: 40px; }
+      header #introduction h2 {
+        font-size: 38px; }
+      header #introduction #tel {
+        color: #ffffff;
+        font-size: 20px; }
+      header #introduction .btn-ylw {
+        font-size: 17px; }
+
+  footer {
+    background-image: url("../img/toronto-small.jpg") !important;
+    height: 460px; }
+
+  /*navigation*/
+  .navbar-default {
+    background-color: transparent !important;
+    border-color: transparent !important; }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #efc337;
+    font-family: "norwesterregular";
+    letter-spacing: 1px;
+    text-transform: capitalize; }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-family: "norwesterregular";
+    letter-spacing: 1px;
+    text-transform: capitalize; }
+
+  /*call to action*/
+  /*about*/
+  #about a {
+    margin-top: 15px; }
+  #about #about-me {
+    margin-top: 0; } }
 /* End of Media Query */
 /*Medium Devices*/
 @media (min-width: 992px) {
