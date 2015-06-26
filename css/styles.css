@@ -1,18 +1,25 @@
 /*FONTS*/
 @font-face {
-  font-family: 'Didot-HTF-L24-Light-Ital';
-  src: url("Didot-HTF-L24-Light-Ital.eot") format("embedded-opentype");
-  src: url("../fonts/exmouth_-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Didot-HTF-L24-Light-Ital.woff") format("woff"), url("Didot-HTF-L24-Light-Ital.ttf") format("truetype"), url("Didot-HTF-L24-Light-Ital.svg#Didot-HTF-L24-Light-Ital") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'norwesterregular';
   src: url("../fonts/norwester-regular-webfont.eot");
   src: url("../fonts/norwester-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/norwester-regular-webfont.woff2") format("woff2"), url("../fonts/norwester-regular-webfont.woff") format("woff"), url("../fonts/norwester-regular-webfont.ttf") format("truetype"), url("../fonts/norwester-regular-webfont.svg#norwesterregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'celesteregular';
+  src: url("../fonts/celesteregular-webfont.eot");
+  src: url("../fonts/celesteregular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/celesteregular-webfont.woff2") format("woff2"), url("../fonts/celesteregular-webfont.woff") format("woff"), url("../fonts/celesteregular-webfont.ttf") format("truetype"), url("../fonts/celesteregular-webfont.svg#celesteregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'freesansmedium';
+  src: url("../fonts/freesans-webfont.eot");
+  src: url("../fonts/freesans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/freesans-webfont.woff2") format("woff2"), url("../fonts/freesans-webfont.woff") format("woff"), url("../fonts/freesans-webfont.ttf") format("truetype"), url("../fonts/freesans-webfont.svg#freesansmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* GLOBAL */
 /*variables*/
+/*fonts*/
 /*font styles / colours*/
 .wht-font {
   color: #ffffff; }
@@ -31,8 +38,11 @@
 .blk-font {
   color: #313335; }
 
-.didot-font {
-  font-family: "Didot-HTF-L24-Light-Ital"; }
+.celeste-font {
+  font-family: "celesteregular"; }
+
+.freesans-font {
+  font-family: "freesansmedium"; }
 
 /*button styles*/
 .btn-blk {
@@ -58,6 +68,12 @@
 
 .btn-ylw:hover {
   color: #313335 !important; }
+
+p {
+  font-size: 16px; }
+
+strong {
+  letter-spacing: 1px; }
 
 /*general*/
 .bkg-position {
@@ -148,6 +164,9 @@ footer {
 /*Small Devices*/
 @media (min-width: 768px) {
   /* Styles */
+  p {
+    font-size: 18px; }
+
   /*header*/
   header {
     background-image: url("../img/small-bkg.jpg") !important;
@@ -169,6 +188,8 @@ footer {
   footer {
     background-image: url("../img/toronto-small.jpg") !important;
     height: 460px; }
+    footer #sitemap {
+      margin-top: 70px; }
 
   /*navigation*/
   .navbar-default {
@@ -199,7 +220,35 @@ footer {
 /* End of Media Query */
 /*Medium Devices*/
 @media (min-width: 992px) {
-  /* Styles */ }
+  /* Styles */
+  p {
+    font-size: 20px; }
+
+  /*header*/
+  header {
+    background-image: url("../img/medium-bkg.jpg") !important;
+    height: 575px; }
+    header #introduction {
+      background-color: transparent;
+      color: #ffffff !important;
+      margin-top: 70px; }
+      header #introduction h1 {
+        font-size: 50px; }
+      header #introduction h2 {
+        font-size: 48px; }
+      header #introduction #tel {
+        color: #ffffff;
+        font-size: 30px; }
+      header #introduction .btn-ylw {
+        font-size: 23px; }
+
+  footer {
+    background-image: url("../img/toronto-medium.jpg") !important;
+    height: 556px; }
+    footer aside {
+      padding-top: 60px; }
+    footer #sitemap {
+      margin-top: 80px; } }
 /* End of Media Query */
 /*Large Devices*/
 @media (min-width: 1200px) {
