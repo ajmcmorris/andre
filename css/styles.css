@@ -76,6 +76,9 @@ strong {
   letter-spacing: 1px; }
 
 /*general*/
+.bkg-light-grey {
+  background-color: #f4f4f4; }
+
 .bkg-position {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -128,12 +131,10 @@ hr {
 footer {
   background-image: url("../img/toronto-mobile.jpg") !important;
   height: 371px; }
-  footer aside {
-    padding: 20px 0 0 0; }
-    footer aside h3 {
-      font-size: 13px; }
-      footer aside h3 .links {
-        color: #ffffff !important; }
+  footer aside h3 {
+    font-size: 13px; }
+    footer aside h3 .links {
+      color: #ffffff !important; }
 
 /* NAVIGATION */
 /* BOOTSTRAP RESETS */
@@ -211,7 +212,9 @@ footer {
     letter-spacing: 1px;
     text-transform: capitalize; }
 
-  /*call to action*/
+  #resume-btn h3 {
+    font-size: 18px; }
+
   /*about*/
   #about a {
     margin-top: 15px; }
@@ -242,6 +245,9 @@ footer {
       header #introduction .btn-ylw {
         font-size: 23px; }
 
+  #resume-btn h3 {
+    font-size: 23px; }
+
   footer {
     background-image: url("../img/toronto-medium.jpg") !important;
     height: 556px; }
@@ -252,7 +258,32 @@ footer {
 /* End of Media Query */
 /*Large Devices*/
 @media (min-width: 1200px) {
-  /* Styles */ }
+  /* Styles */
+  /*header*/
+  header {
+    background-image: url("../img/large-bkg.jpg") !important;
+    height: 719px; }
+    header #introduction {
+      background-color: transparent;
+      color: #ffffff !important;
+      margin-top: 70px; }
+      header #introduction h1 {
+        font-size: 50px; }
+      header #introduction h2 {
+        font-size: 48px; }
+      header #introduction #tel {
+        color: #ffffff;
+        font-size: 30px; }
+      header #introduction .btn-ylw {
+        font-size: 23px; }
+
+  footer {
+    background-image: url("../img/toronto-large.jpg") !important;
+    height: 695px; }
+    footer aside {
+      padding-top: 60px; }
+    footer #sitemap {
+      margin-top: 80px; } }
 /* End of Media Query */
 /*Extra Large Devices*/
 @media (min-width: 1824px) {

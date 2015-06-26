@@ -45,6 +45,7 @@ $beige:#f0eee5;
 $black:#313335;
 $white:#ffffff;
 $grey:#73797e;
+$light-grey:#f4f4f4;
 $btn-padding:10px 20px;
 
 	/*fonts*/
@@ -115,7 +116,9 @@ strong{
 }
 	/*general*/
 
-
+.bkg-light-grey{
+	background-color: $light-grey;
+}
 .bkg-position{
 	@include background-size($cover);
 	background:bottom center scroll no-repeat;
@@ -169,7 +172,7 @@ footer{
 	background-image: url("../img/toronto-mobile.jpg") !important;
 	height: 371px;
 	aside{
-		padding: 20px 0 0 0;
+		
 		h3{
 			font-size: 13px;
 			
@@ -265,9 +268,10 @@ footer{
 	    letter-spacing: 1px;
 	    text-transform: capitalize;
 	}
-	/*call to action*/
-	#cta{
-
+	#resume-btn{
+		h3{
+			font-size: 18px;
+		}
 	}
 	/*about*/
 	#about{
@@ -311,6 +315,11 @@ footer{
 			}
 		}
 	}
+	#resume-btn{
+		h3{
+			font-size: 23px;
+		}
+	}
 	
 	footer{
 		background-image: url("../img/toronto-medium.jpg") !important;
@@ -328,7 +337,40 @@ footer{
 /*Large Devices*/
 @media (min-width: 1200px) {
 	/* Styles */
- 
+ 	/*header*/
+	header{
+		background-image: url("../img/large-bkg.jpg") !important;
+		height: 719px;
+		#introduction{
+			background-color: transparent;
+			color: $white !important;
+			margin-top: 70px;
+			h1{
+				font-size: 50px;
+			}
+			h2{
+				font-size: 48px;
+			}
+			#tel{
+				color: $white;
+				font-size: 30px;
+			}
+			.btn-ylw{
+				font-size: 23px;
+			}
+		}
+	}
+	footer{
+		background-image: url("../img/toronto-large.jpg") !important;
+		height: 695px;
+		aside{
+			padding-top: 60px;
+		}
+		#sitemap{
+			margin-top: 80px;
+		}
+	}
+
 }/* End of Media Query */
 
 /*Extra Large Devices*/
