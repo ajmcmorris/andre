@@ -46,6 +46,7 @@ $black:#313335;
 $white:#ffffff;
 $grey:#73797e;
 $light-grey:#f4f4f4;
+$dark-grey:#201f1d;
 $btn-padding:10px 20px;
 
 	/*fonts*/
@@ -164,13 +165,14 @@ a{
 #about-me{
 	margin-top: 25px;
 }
+
 	/*footer*/
+
 hr{
-	border: 1px solid $grey;
+	border: 0.6px solid $grey;
 }
 footer{
-	background-image: url("../img/toronto-mobile.jpg") !important;
-	height: 371px;
+	background-color: $dark-grey;
 	aside{
 		
 		h3{
@@ -215,8 +217,13 @@ footer{
 	/* Styles */
 	
 	p{
-		font-size: 18px;
+		font-size: 15px;
 	}
+	/*portfolio-page*/
+#portfolio-page{
+	background-image: url("../img/port-mobile.jpg") !important;
+	height: 494px;
+}
 	/*header*/
 	header{
 		background-image: url("../img/small-bkg.jpg") !important;
@@ -242,8 +249,7 @@ footer{
 	}
 	
 	footer{
-		background-image: url("../img/toronto-small.jpg") !important;
-		height: 460px;
+		
 		#sitemap{
 			margin-top: 70px;
 		}
@@ -290,7 +296,7 @@ footer{
 @media (min-width: 992px) {
 	/* Styles */
 	p{
-		font-size: 20px;
+		font-size: 17px;
 	}
 	/*header*/
 	header{
@@ -322,8 +328,7 @@ footer{
 	}
 	
 	footer{
-		background-image: url("../img/toronto-medium.jpg") !important;
-		height: 556px;
+		
 		aside{
 			padding-top: 60px;
 		}
@@ -361,8 +366,7 @@ footer{
 		}
 	}
 	footer{
-		background-image: url("../img/toronto-large.jpg") !important;
-		height: 695px;
+		
 		aside{
 			padding-top: 60px;
 		}
