@@ -169,8 +169,8 @@ footer {
 
   /*portfolio-page*/
   #portfolio-page {
-    background-image: url("../img/port-mobile.jpg") !important;
-    height: 494px; }
+    background-image: url("../img/port-small.jpg") !important;
+    height: 420px; }
 
   /*header*/
   header {
@@ -228,6 +228,10 @@ footer {
   p {
     font-size: 17px; }
 
+  #portfolio-page {
+    background-image: url("../img/port-medium.jpg") !important;
+    height: 570px; }
+
   /*header*/
   header {
     background-image: url("../img/medium-bkg.jpg") !important;
@@ -257,6 +261,10 @@ footer {
 /*Large Devices*/
 @media (min-width: 1200px) {
   /* Styles */
+  #portfolio-page {
+    background-image: url("../img/port-large.jpg") !important;
+    height: 570px; }
+
   /*header*/
   header {
     background-image: url("../img/large-bkg.jpg") !important;
