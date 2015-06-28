@@ -24,6 +24,9 @@
 .wht-font {
   color: #ffffff; }
 
+.ylw-font {
+  color: #efc337 !important; }
+
 .nor-font {
   font-family: "norwesterregular";
   letter-spacing: 1px;
@@ -76,6 +79,10 @@ strong {
   letter-spacing: 1px; }
 
 /*general*/
+figure {
+  padding: 15px;
+  margin: 15px 0px; }
+
 .bkg-light-grey {
   background-color: #f4f4f4; }
 
@@ -124,6 +131,31 @@ a {
 #about-me {
   margin-top: 25px; }
 
+/*portfolio-page*/
+#portfolio-page .navbar-default {
+  background-color: #efc337 !important;
+  border-color: transparent !important; }
+#portfolio-page .navbar-default .navbar-toggle {
+  border-color: #efc337; }
+#portfolio-page h1 {
+  font-size: 28px; }
+#portfolio-page h3 {
+  font-size: 14px; }
+
+#alex {
+  background-image: url("../img/alex-port.jpg"); }
+
+#port-intro {
+  background-color: #efc337; }
+
+#port-dropdown {
+  margin: 15px; }
+  #port-dropdown a {
+    cursor: pointer; }
+
+.port-img {
+  height: 222px; }
+
 /*footer*/
 hr {
   border: 0.6px solid #73797e; }
@@ -167,10 +199,18 @@ footer {
   p {
     font-size: 15px; }
 
+  #port-intro {
+    background-color: transparent; }
+
   /*portfolio-page*/
   #portfolio-page {
     background-image: url("../img/port-small.jpg") !important;
     height: 420px; }
+    #portfolio-page .navbar-default {
+      background-color: transparent !important;
+      border-color: transparent !important; }
+    #portfolio-page .navbar-default .navbar-toggle {
+      border-color: transparent !important; }
 
   /*header*/
   header {
@@ -191,7 +231,7 @@ footer {
         font-size: 17px; }
 
   footer #sitemap {
-    margin-top: 70px; }
+    margin-top: 0px; }
 
   /*navigation*/
   .navbar-default {
@@ -254,9 +294,9 @@ footer {
     font-size: 23px; }
 
   footer aside {
-    padding-top: 60px; }
+    padding-top: 0px; }
   footer #sitemap {
-    margin-top: 80px; } }
+    margin-top: 0; } }
 /* End of Media Query */
 /*Large Devices*/
 @media (min-width: 1200px) {
@@ -284,9 +324,9 @@ footer {
         font-size: 23px; }
 
   footer aside {
-    padding-top: 60px; }
+    padding-top: 0px; }
   footer #sitemap {
-    margin-top: 80px; } }
+    margin-top: 0px; } }
 /* End of Media Query */
 /*Extra Large Devices*/
 @media (min-width: 1824px) {

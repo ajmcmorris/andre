@@ -64,6 +64,9 @@ $freesans:'freesansmedium';
 .wht-font{
 	color: $white;
 }
+.ylw-font{
+	color: $yellow !important;
+}
 .nor-font{
 	font-family: $nor;
 	letter-spacing: 1px;
@@ -116,7 +119,10 @@ strong{
 	letter-spacing: 1px;
 }
 	/*general*/
-
+figure{
+	padding:15px;
+	margin: 15px 0px;
+}
 .bkg-light-grey{
 	background-color: $light-grey;
 }
@@ -154,6 +160,7 @@ a{
 			font-size: 13px;
 		}
 }
+
 	/*portfolio-preview*/
 #portfolio{
 	margin: 25px 0;
@@ -164,6 +171,37 @@ a{
 }
 #about-me{
 	margin-top: 25px;
+}
+	/*portfolio-page*/
+#portfolio-page{
+	.navbar-default {
+	    background-color:$yellow !important;
+	    border-color: transparent !important;
+	}
+	.navbar-default .navbar-toggle {
+    	border-color: $yellow;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h3{
+		font-size: 14px;
+	}
+}
+#alex{
+	background-image: url("../img/alex-port.jpg");
+}
+#port-intro{
+	background-color: $yellow;
+}
+#port-dropdown{
+	margin: 15px;
+	a{
+		cursor: pointer;
+	}
+}		
+.port-img{
+	height:222px;
 }
 
 	/*footer*/
@@ -219,11 +257,22 @@ footer{
 	p{
 		font-size: 15px;
 	}
+	#port-intro {
+    	background-color: transparent;
+	}
+	
 	/*portfolio-page*/
 
 #portfolio-page{
 	background-image: url("../img/port-small.jpg") !important;
 	height: 420px;
+	.navbar-default {
+	    background-color:transparent !important;
+	    border-color: transparent !important;
+	}
+	.navbar-default .navbar-toggle {
+    	border-color: transparent !important;
+	}
 	}
 	/*header*/
 	header{
@@ -252,7 +301,7 @@ footer{
 	footer{
 		
 		#sitemap{
-			margin-top: 70px;
+			margin-top: 0px;
 		}
 	}
 	/*navigation*/
@@ -335,10 +384,10 @@ footer{
 	footer{
 		
 		aside{
-			padding-top: 60px;
+			padding-top: 0px;
 		}
 		#sitemap{
-			margin-top: 80px;
+			margin-top: 0;
 		}
 	}
  
@@ -377,10 +426,10 @@ footer{
 	footer{
 		
 		aside{
-			padding-top: 60px;
+			padding-top: 0px;
 		}
 		#sitemap{
-			margin-top: 80px;
+			margin-top: 0px;
 		}
 	}
 
