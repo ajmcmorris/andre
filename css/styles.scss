@@ -91,22 +91,6 @@ $freesans:'freesansmedium';
 	font-family: $freesans;
 }
 	/*button styles*/
-.btn-blk{
-	padding: $btn-padding;
-	background-color: $black;
-	color: $white;
-}
-.btn-blk:hover{
-	color: $white !important;
-}
-.btn-gry{
-	padding: $btn-padding;
-	border: $grey 2px solid;
-	color: $grey;
-}
-.btn-gry:hover{
-	color: $grey !important;
-}
 .btn-ylw{
 	padding: $btn-padding;
 	background-color: $yellow;
@@ -118,13 +102,13 @@ $freesans:'freesansmedium';
 p{
 	font-size: 16px;
 }
-strong{
-	letter-spacing: 1px;
-}
 	/*general*/
 figure{
 	padding:15px;
 	margin: 15px 0px;
+}
+.bkg-wht{
+	background-color: $white;
 }
 .bkg-light-grey{
 	background-color: $light-grey;
@@ -163,27 +147,25 @@ a{
 			font-size: 15px;
 		}
 }
-
 	/*portfolio-preview*/
 #portfolio{
 	margin: 25px 0;
 }	
 	/*about*/
 #about{
-	background-color: $yellow;
+	margin-top:25px;
+	margin-bottom: 35px;
+	h1{
+			font-size: 22px !important;
+		}
 }
 #about-me{
 	margin-top: 25px;
+	padding: 0 20px;
 }
 	/*portfolio-page*/
 #portfolio-page{
-	.navbar-default {
-	    background-color:$yellow !important;
-	    border-color: transparent !important;
-	}
-	.navbar-default .navbar-toggle {
-    	border-color: $yellow;
-	}
+
 	h1{
 		font-size: 28px;
 	}
@@ -203,9 +185,6 @@ a{
 #sunset{
 	background-image:url("../img/sunset-temp.jpg");
 }
-#port-intro{
-	background-color: $yellow;
-}
 #port-list{
 	display:none;
 }
@@ -217,9 +196,6 @@ a{
 }		
 .port-img{
 	height:222px;
-}
-#contact-page{
-
 }
 	/*footer*/
 
@@ -242,37 +218,7 @@ footer{
 	}
 }
 /* NAVIGATION */
-/* BOOTSTRAP RESETS */
-.navbar {
-  margin-bottom: 0px !important; }
 
-.navbar-default {
-  background-color: $beige !important;
-  border-color: transparent !important; }
-.navbar-collapse{
-	box-shadow: none;
-}
-#portfolio-page{
-	.navbar-default .navbar-collapse{
-		border-color: $yellow;
-	}
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: $beige; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: $grey; }
-
-.navbar-default .navbar-toggle {
-  border-color: $beige; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: transparent; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: $grey;
-  background-color:$beige; 
-}
 /*Media Queries*/
 
 /*Small Devices*/
@@ -280,6 +226,9 @@ footer{
 	/* Styles */
 	p{
 		font-size: 15px;
+	}
+	#about-me{
+		padding: 0 100px;
 	}
 	#port-intro {
     	background-color: transparent;
@@ -324,17 +273,6 @@ footer{
 
 }
 
-#portfolio-page{
-	background-image: url("../img/port-small.jpg") !important;
-	height: 420px;
-	.navbar-default {
-	    background-color:transparent !important;
-	    border-color: transparent !important;
-	}
-	.navbar-default .navbar-toggle {
-    	border-color: transparent !important;
-	}
-	}
 	/*header*/
 	header{
 		background-image: url("../img/small-bkg.jpg") !important;
@@ -342,7 +280,7 @@ footer{
 		#introduction{
 			background-color: transparent;
 			color: $white !important;
-			margin-top: 70px;
+			padding-top: 70px;
 			h1{
 				font-size: 40px;
 			}
@@ -365,26 +303,7 @@ footer{
 			margin-top: 0px;
 		}
 	}
-	/*navigation*/
-	.navbar-default {
-	    background-color: transparent !important;
-	    border-color: transparent !important;
-	}
-	.navbar-default .navbar-nav > .active > a, 
-	.navbar-default .navbar-nav > .active > a:hover, 
-	.navbar-default .navbar-nav > .active > a:focus {
-	    color: $white;
-	    background-color: $yellow;
-	    font-family: $nor;
-	    letter-spacing: 1px;
-	    text-transform: capitalize;
-	}
-	.navbar-default .navbar-nav > li > a {
-	    color: $white;
-	    font-family: $nor;
-	    letter-spacing: 1px;
-	    text-transform: capitalize;
-	}
+
 	#resume-btn{
 		h3{
 			font-size: 18px;
@@ -398,18 +317,10 @@ footer{
 		#about-me{
 			margin-top: 0;
 		}
-	}
-	
-	/*contact-page*/
-	#contact-page{
-		background-image:url("../img/small-contact.jpg") !important;
 		h1{
-
+			font-size: 30px !important;
 		}
-		h2{
-
-		}
-	}	
+	}
 
 }/* End of Media Query */
 
@@ -417,31 +328,21 @@ footer{
 @media (min-width: 992px) {
 	/* Styles */
 	p{
-		font-size: 17px;
+		font-size: 15px;
 	}
-	/*contact-page*/
-	#contact-page{
-		background-image:url("../img/medium-contact.jpg") !important;
-		h1{
-
-		}
-		h2{
-			
-		}
-	}	
-
+	#about-me{
+		padding: 0 100px;
+}
 	#portfolio-page{
 	background-image: url("../img/port-medium.jpg") !important;
 	height: 470px;
 	}
 	/*header*/
 	header{
-		background-image: url("../img/medium-bkg.jpg") !important;
-		height: 575px;
 		#introduction{
 			background-color: transparent;
 			color: $white !important;
-			margin-top: 70px;
+			padding-top: 70px;
 			h1{
 				font-size: 50px;
 			}
@@ -479,31 +380,22 @@ footer{
 @media (min-width: 1200px) {
 	/* Styles */
 	p{
-		font-size: 21px;
+		font-size: 15px;
+	}
+	#about-me{
+		padding: 0 100px;
 	}
 	#portfolio-page{
 	background-image: url("../img/port-large.jpg") !important;
 	height: 470px;
 	}
-	/*contact-page*/
-	#contact-page{
-		background-image:url("../img/large-contact.jpg") !important;
-		h1{
-
-		}
-		h2{
-			
-		}
-	}	
 
  	/*header*/
 	header{
-		background-image: url("../img/large-bkg.jpg") !important;
-		height: 719px;
 		#introduction{
 			background-color: transparent;
 			color: $white !important;
-			margin-top: 70px;
+			padding-top: 70px;
 			h1{
 				font-size: 50px;
 			}
@@ -536,24 +428,3 @@ footer{
   /* Styles */
 
 }/* End of Media Query */
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}

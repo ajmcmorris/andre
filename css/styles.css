@@ -51,22 +51,6 @@
   font-family: "freesansmedium"; }
 
 /*button styles*/
-.btn-blk {
-  padding: 10px 20px;
-  background-color: #313335;
-  color: #ffffff; }
-
-.btn-blk:hover {
-  color: #ffffff !important; }
-
-.btn-gry {
-  padding: 10px 20px;
-  border: #73797e 2px solid;
-  color: #73797e; }
-
-.btn-gry:hover {
-  color: #73797e !important; }
-
 .btn-ylw {
   padding: 10px 20px;
   background-color: #efc337;
@@ -78,13 +62,13 @@
 p {
   font-size: 16px; }
 
-strong {
-  letter-spacing: 1px; }
-
 /*general*/
 figure {
   padding: 15px;
   margin: 15px 0px; }
+
+.bkg-wht {
+  background-color: #ffffff; }
 
 .bkg-light-grey {
   background-color: #f4f4f4; }
@@ -129,17 +113,16 @@ a {
 
 /*about*/
 #about {
-  background-color: #efc337; }
+  margin-top: 25px;
+  margin-bottom: 35px; }
+  #about h1 {
+    font-size: 22px !important; }
 
 #about-me {
-  margin-top: 25px; }
+  margin-top: 25px;
+  padding: 0 20px; }
 
 /*portfolio-page*/
-#portfolio-page .navbar-default {
-  background-color: #efc337 !important;
-  border-color: transparent !important; }
-#portfolio-page .navbar-default .navbar-toggle {
-  border-color: #efc337; }
 #portfolio-page h1 {
   font-size: 28px; }
 #portfolio-page h3 {
@@ -156,9 +139,6 @@ a {
 
 #sunset {
   background-image: url("../img/sunset-temp.jpg"); }
-
-#port-intro {
-  background-color: #efc337; }
 
 #port-list {
   display: none; }
@@ -183,42 +163,15 @@ footer {
       color: #ffffff !important; }
 
 /* NAVIGATION */
-/* BOOTSTRAP RESETS */
-.navbar {
-  margin-bottom: 0px !important; }
-
-.navbar-default {
-  background-color: #f0eee5 !important;
-  border-color: transparent !important; }
-
-.navbar-collapse {
-  box-shadow: none; }
-
-#portfolio-page .navbar-default .navbar-collapse {
-  border-color: #efc337; }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: #f0eee5; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #73797e; }
-
-.navbar-default .navbar-toggle {
-  border-color: #f0eee5; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: transparent; }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #73797e;
-  background-color: #f0eee5; }
-
 /*Media Queries*/
 /*Small Devices*/
 @media (min-width: 768px) {
   /* Styles */
   p {
     font-size: 15px; }
+
+  #about-me {
+    padding: 0 100px; }
 
   #port-intro {
     background-color: transparent;
@@ -252,15 +205,6 @@ footer {
         #port-list ul li a {
           color: #ffffff; }
 
-  #portfolio-page {
-    background-image: url("../img/port-small.jpg") !important;
-    height: 420px; }
-    #portfolio-page .navbar-default {
-      background-color: transparent !important;
-      border-color: transparent !important; }
-    #portfolio-page .navbar-default .navbar-toggle {
-      border-color: transparent !important; }
-
   /*header*/
   header {
     background-image: url("../img/small-bkg.jpg") !important;
@@ -268,7 +212,7 @@ footer {
     header #introduction {
       background-color: transparent;
       color: #ffffff !important;
-      margin-top: 70px; }
+      padding-top: 70px; }
       header #introduction h1 {
         font-size: 40px; }
       header #introduction h2 {
@@ -282,26 +226,6 @@ footer {
   footer #sitemap {
     margin-top: 0px; }
 
-  /*navigation*/
-  .navbar-default {
-    background-color: transparent !important;
-    border-color: transparent !important; }
-
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: #efc337;
-    font-family: "norwesterregular";
-    letter-spacing: 1px;
-    text-transform: capitalize; }
-
-  .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
-    font-family: "norwesterregular";
-    letter-spacing: 1px;
-    text-transform: capitalize; }
-
   #resume-btn h3 {
     font-size: 18px; }
 
@@ -310,42 +234,36 @@ footer {
     margin-top: 15px; }
   #about #about-me {
     margin-top: 0; }
-
-  /*contact-page*/
-  #contact-page {
-    background-image: url("../img/small-contact.jpg") !important; } }
+  #about h1 {
+    font-size: 30px !important; } }
 /* End of Media Query */
 /*Medium Devices*/
 @media (min-width: 992px) {
   /* Styles */
   p {
-    font-size: 17px; }
+    font-size: 15px; }
 
-  /*contact-page*/
-  #contact-page {
-    background-image: url("../img/medium-contact.jpg") !important; }
+  #about-me {
+    padding: 0 100px; }
 
   #portfolio-page {
     background-image: url("../img/port-medium.jpg") !important;
     height: 470px; }
 
   /*header*/
-  header {
-    background-image: url("../img/medium-bkg.jpg") !important;
-    height: 575px; }
-    header #introduction {
-      background-color: transparent;
-      color: #ffffff !important;
-      margin-top: 70px; }
-      header #introduction h1 {
-        font-size: 50px; }
-      header #introduction h2 {
-        font-size: 48px; }
-      header #introduction #tel {
-        color: #ffffff;
-        font-size: 30px; }
-      header #introduction .btn-ylw {
-        font-size: 23px; }
+  header #introduction {
+    background-color: transparent;
+    color: #ffffff !important;
+    padding-top: 70px; }
+    header #introduction h1 {
+      font-size: 50px; }
+    header #introduction h2 {
+      font-size: 48px; }
+    header #introduction #tel {
+      color: #ffffff;
+      font-size: 30px; }
+    header #introduction .btn-ylw {
+      font-size: 23px; }
 
   #resume-btn h3 {
     font-size: 23px; }
@@ -359,33 +277,29 @@ footer {
 @media (min-width: 1200px) {
   /* Styles */
   p {
-    font-size: 21px; }
+    font-size: 15px; }
+
+  #about-me {
+    padding: 0 100px; }
 
   #portfolio-page {
     background-image: url("../img/port-large.jpg") !important;
     height: 470px; }
 
-  /*contact-page*/
-  #contact-page {
-    background-image: url("../img/large-contact.jpg") !important; }
-
   /*header*/
-  header {
-    background-image: url("../img/large-bkg.jpg") !important;
-    height: 719px; }
-    header #introduction {
-      background-color: transparent;
-      color: #ffffff !important;
-      margin-top: 70px; }
-      header #introduction h1 {
-        font-size: 50px; }
-      header #introduction h2 {
-        font-size: 48px; }
-      header #introduction #tel {
-        color: #ffffff;
-        font-size: 30px; }
-      header #introduction .btn-ylw {
-        font-size: 23px; }
+  header #introduction {
+    background-color: transparent;
+    color: #ffffff !important;
+    padding-top: 70px; }
+    header #introduction h1 {
+      font-size: 50px; }
+    header #introduction h2 {
+      font-size: 48px; }
+    header #introduction #tel {
+      color: #ffffff;
+      font-size: 30px; }
+    header #introduction .btn-ylw {
+      font-size: 23px; }
 
   footer aside {
     padding-top: 0px; }
@@ -396,17 +310,5 @@ footer {
 @media (min-width: 1824px) {
   /* Styles */ }
 /* End of Media Query */
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */ }
 
 /*# sourceMappingURL=styles.css.map */

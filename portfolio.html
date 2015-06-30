@@ -20,45 +20,24 @@
   </head>
   <body>
   <!-- Container -->
-  <div class="container-fluid grey-font ">
+  <div class="container-fluid grey-font bkg-light-grey">
     <!-- Row -->
     <div class="row">
     <!-- Header -->
     <header class=" bkg-position" id="portfolio-page">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                    	<i class="fa fa-usd"></i>
-                    </a>
-                </div>             
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+       
          <!-- aside -->
-            <aside class="text-center wht-font  clearfix" id="port-intro">
-                <h1 class="celeste-font headings">What I Don't know</h1>
-                <h2 class="celeste-font headings clearfix">I Can Learn</h2>
-                <h3 class=" headings celeste-font">It Always Seems Impossible Until It's Done</h3>
+            <aside class="text-center section-padding  clearfix" id="introduction">
+                <h1 class="celeste-font headings">Andre McMorris</h1>
+                <h2 class="celeste-font headings clearfix">Front End Web Developer</h2>
+                <h3> <a href="https://github.com/ajmcmorris" class="btn-ylw nor-font headings" target="_blank">https://github.com/ajmcmorris</a> </h3>
+                <h3><a href="tel:416.788.4642" class="grey-font headings celeste-font" id="tel">Tel:416.788.4642</a></h3>
             </aside><!-- End of aside -->
-
     </header><!-- End of Header -->
     </div> <!-- End of Header Row -->
-
-    <section class="clearfix">
+    
+    <!-- Portfolio Section -->
+    <section class="clearfix container">
         <div class="dropdown text-center clearfix" id="port-dropdown">
           <a id="dLabel" class="btn-blk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sort Category
@@ -81,9 +60,10 @@
          </nav>
         </div>
          <div class="clearfix"></div>
+
         <!-- Portfolio Item -->
         <div class="col-sm-4 websites item-list">
-          <figure class="bkg-light-grey">
+          <figure class="bkg-wht">
                 <div class="bkg-position port-img" id="alex"></div>
                      <figcaption>
                          <dl>
@@ -97,7 +77,7 @@
 
         <!-- Portfolio Item -->
         <div class="col-sm-4 apps item-list">
-          <figure class="bkg-light-grey">
+          <figure class="bkg-wht">
                 <div class="bkg-position port-img" id="lcbo"></div>
                      <figcaption>
                          <dl>
@@ -111,7 +91,7 @@
 
          <!-- Portfolio Item -->
         <div class="col-sm-4 websites templates item-list">
-          <figure class="bkg-light-grey">
+          <figure class="bkg-wht">
                 <div class="bkg-position port-img" id="lana"></div>
                      <figcaption>
                          <dl>
@@ -125,7 +105,7 @@
 
          <!-- Portfolio Item -->
         <div class="col-sm-4 websites templates item-list">
-          <figure class="bkg-light-grey">
+          <figure class="bkg-wht">
                 <div class="bkg-position port-img" id="sunset"></div>
                      <figcaption>
                          <dl>
@@ -137,17 +117,37 @@
          </figure>
         </div><!-- End of Portfolio Item -->
 
-        <div class="clearfix"></div>
-         <!-- Button -->
+     </section> <!-- End of Portfolio Section -->
+     
+     <!-- Main Section -->
+     <section class="bkg-wht clearfix section-padding container" id="about">
+
+         <!-- aside -->
+            <aside class="text-center off-blk-font  clearfix" id="port-intro">
+                <h1 class="celeste-font headings">What I Don't know, I Can <em>Learn</em></h1>
+            </aside><!-- End of aside -->
+
+         <div class="clearfix"></div>
+
+         
+        <div class="off-blk-font" id="about-me">
+            <p>With over 2 years of developing and designing front end, I have a passion for producing products that bring my clients ideas to life.I love working in a collaborative manner with clients in order to design the best possible website.</p>
+            <p>Armed with over 3 years of education in computer programming and web design, I discovered my passion for this line of work at a young age. I find the most satisfying part of my job is the reaction i get from a happy client.</p>
+            <p>And for more details on some of my projects and myself check out my....</p>
+
+
+            <!-- Button -->
             <div class="text-center section-padding row">
                 <a href="#" class="btn-ylw nor-font">resume</a>
             </div><!-- End of Button -->
+        
+        </div>
 
-     </section> 
+     </section><!-- End of Main Section -->
 
     <!-- Footer -->
     <div class="row ">
-    <footer class="wht-font">
+    <footer class="wht-font nor-font">
         <!-- aside -->
         <aside class="text-center col-xs-10 col-xs-offset-1 clearfix">
             <dl>
