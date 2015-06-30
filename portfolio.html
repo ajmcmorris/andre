@@ -44,7 +44,6 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -61,24 +60,29 @@
 
     <section class="clearfix">
         <div class="dropdown text-center clearfix" id="port-dropdown">
-          <a id="dLabel" class="btn-blk" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a id="dLabel" class="btn-blk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sort Category
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="dLabel">
              <li><a href="">All</a></li>
              <li><a href="">WebSites</a></li>
-             <li><a href="">Graphic Work</a></li>
+             <li><a href="">Templates</a></li>
           </ul>
         </div>
-        
-         <nav class="hidden">
-             <ul>
-                <li></li>             
+        <div class="text-center">
+         <nav id="port-list" class="center-block">
+             <ul  class="freesans-font" id="filter">
+                <li class="current"><a href="">All</a></li>
+                <li><a href="">WebSites</a></li>
+                <li><a href="">Apps</a></li>
+                <li><a href="">Templates</a></li>   
              </ul>
          </nav>
+        </div>
+         <div class="clearfix"></div>
         <!-- Portfolio Item -->
-        <div class="col-sm-4">
+        <div class="col-sm-4 websites item-list">
           <figure class="bkg-light-grey">
                 <div class="bkg-position port-img" id="alex"></div>
                      <figcaption>
@@ -92,18 +96,52 @@
         </div><!-- End of Portfolio Item -->
 
         <!-- Portfolio Item -->
-        <div class="col-sm-4">
+        <div class="col-sm-4 apps item-list">
           <figure class="bkg-light-grey">
-                <div class="bkg-position port-img" id="alex"></div>
+                <div class="bkg-position port-img" id="lcbo"></div>
                      <figcaption>
                          <dl>
-                             <dt>Alex Rinaldo</dt>
+                             <dt>Lcbo</dt>
                              <dd class="text-warning">In Development</dd>
                              <dd><a href="">visit site</a></dd>
                          </dl>
                      </figcaption>
          </figure>
         </div><!-- End of Portfolio Item -->
+
+         <!-- Portfolio Item -->
+        <div class="col-sm-4 websites templates item-list">
+          <figure class="bkg-light-grey">
+                <div class="bkg-position port-img" id="lana"></div>
+                     <figcaption>
+                         <dl>
+                             <dt>Template</dt>
+                             <dd class="text-success">Online</dd>
+                             <dd><a href="">visit site</a></dd>
+                         </dl>
+                     </figcaption>
+         </figure>
+        </div><!-- End of Portfolio Item -->
+
+         <!-- Portfolio Item -->
+        <div class="col-sm-4 websites templates item-list">
+          <figure class="bkg-light-grey">
+                <div class="bkg-position port-img" id="sunset"></div>
+                     <figcaption>
+                         <dl>
+                             <dt>Template</dt>
+                             <dd class="text-success">Online</dd>
+                             <dd><a href="">visit site</a></dd>
+                         </dl>
+                     </figcaption>
+         </figure>
+        </div><!-- End of Portfolio Item -->
+
+        <div class="clearfix"></div>
+         <!-- Button -->
+            <div class="text-center section-padding row">
+                <a href="#" class="btn-ylw nor-font">resume</a>
+            </div><!-- End of Button -->
 
      </section> 
 
@@ -111,21 +149,17 @@
     <div class="row ">
     <footer class="wht-font">
         <!-- aside -->
-        <aside class="text-center clearfix">
-            <h2 class="celeste-font headings">Let Me <em>Wow</em> You!</h2>
-            <p>To contact me about job opportunities, or anything of that nature check out the links below</p>
-            <h3><a href="mailto:ajmcmorris@gmail.com" class=" headings ylw-font">ajmcmorris@gmail.com</a></h3>
-            <h3><a href="tel:416.788.4642" class="headings links">Tel:416.788.4642</a></h3>
-            <h3><a href="#" class="ylw-font nor-font ">resume</a></h3>
+        <aside class="text-center col-xs-10 col-xs-offset-1 clearfix">
+            <dl>
+                <dt class="celeste-font headings">Let Me <em>Wow</em> You!</dt>
+                <dd>Contact me</dd>
+                <dd><a href="mailto:ajmcmorris@gmail.com" class=" headings ylw-font">ajmcmorris@gmail.com</a></dd>
+                <dd><a href="tel:416.788.4642" class="headings links">Tel:416.788.4642</a></dd>
+            </dl>
         </aside><!-- End of aside -->
-        
-        <div class="container" id="sitemap">
-            <div class="row">
-                <hr>
-                <p class="text-muted text-left grey-font">Designed by <a href="http://jrdn-360.com">jrdn-360.com</a> &copy; 2015</p>
-            </div>
-        </div>
+        <div class="clearfix"></div>
 
+      
     </footer><!-- End of Footer -->
 
     </div><!-- End of Row -->
@@ -135,5 +169,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

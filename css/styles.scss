@@ -72,6 +72,9 @@ $freesans:'freesansmedium';
 	letter-spacing: 1px;
 	text-transform: capitalize;
 }
+.off-blk-font{
+	color: #595444;
+}
 .bold{
 	font-weight: 550;
 }
@@ -128,7 +131,7 @@ figure{
 }
 .bkg-position{
 	@include background-size($cover);
-	background:bottom center scroll no-repeat;
+	background:top center scroll no-repeat;
 }
 .section-padding{
 	padding: 20px 0;
@@ -157,7 +160,7 @@ a{
 			margin-top:0px !important;
 		}
 		h3{
-			font-size: 13px;
+			font-size: 15px;
 		}
 }
 
@@ -191,8 +194,20 @@ a{
 #alex{
 	background-image: url("../img/alex-port.jpg");
 }
+#lcbo{
+	background-image:url("../img/lcbo.jpg");
+}
+#lana{
+	background-image:url("../img/lana-temp.jpg");
+}
+#sunset{
+	background-image:url("../img/sunset-temp.jpg");
+}
 #port-intro{
 	background-color: $yellow;
+}
+#port-list{
+	display:none;
 }
 #port-dropdown{
 	margin: 15px;
@@ -203,8 +218,11 @@ a{
 .port-img{
 	height:222px;
 }
+#contact-page{
 
+}
 	/*footer*/
+
 
 hr{
 	border: 0.6px solid $grey;
@@ -231,7 +249,14 @@ footer{
 .navbar-default {
   background-color: $beige !important;
   border-color: transparent !important; }
-
+.navbar-collapse{
+	box-shadow: none;
+}
+#portfolio-page{
+	.navbar-default .navbar-collapse{
+		border-color: $yellow;
+	}
+}
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: $beige; }
 
@@ -253,15 +278,51 @@ footer{
 /*Small Devices*/
 @media (min-width: 768px) {
 	/* Styles */
-	
 	p{
 		font-size: 15px;
 	}
 	#port-intro {
     	background-color: transparent;
+    	margin-top: 50px;
+    	h1{
+			font-size: 40px;
+    	}
+    	h2{
+			font-size: 38px;
+    	}
+    	h3{
+			font-size: 28px;
+    	}
 	}
 	
 	/*portfolio-page*/
+
+#port-dropdown{
+	display: none;
+}
+.current{
+	border-bottom: 4px solid $yellow;
+}
+#port-list{
+	display:inline-block;
+	margin: 20px 0;
+	background-color: $black;
+	ul{
+
+		list-style-type: none;
+		margin-bottom: 0;
+		padding: 10px 20px;		
+		li{
+			padding: 10px 20px;
+			display: inline;
+			margin: 0 10px;
+			a{
+				color: $white;
+			}
+		}
+	}
+
+}
 
 #portfolio-page{
 	background-image: url("../img/port-small.jpg") !important;
@@ -339,6 +400,16 @@ footer{
 		}
 	}
 	
+	/*contact-page*/
+	#contact-page{
+		background-image:url("../img/small-contact.jpg") !important;
+		h1{
+
+		}
+		h2{
+
+		}
+	}	
 
 }/* End of Media Query */
 
@@ -348,9 +419,20 @@ footer{
 	p{
 		font-size: 17px;
 	}
+	/*contact-page*/
+	#contact-page{
+		background-image:url("../img/medium-contact.jpg") !important;
+		h1{
+
+		}
+		h2{
+			
+		}
+	}	
+
 	#portfolio-page{
 	background-image: url("../img/port-medium.jpg") !important;
-	height: 570px;
+	height: 470px;
 	}
 	/*header*/
 	header{
@@ -396,10 +478,24 @@ footer{
 /*Large Devices*/
 @media (min-width: 1200px) {
 	/* Styles */
+	p{
+		font-size: 21px;
+	}
 	#portfolio-page{
 	background-image: url("../img/port-large.jpg") !important;
-	height: 570px;
+	height: 470px;
 	}
+	/*contact-page*/
+	#contact-page{
+		background-image:url("../img/large-contact.jpg") !important;
+		h1{
+
+		}
+		h2{
+			
+		}
+	}	
+
  	/*header*/
 	header{
 		background-image: url("../img/large-bkg.jpg") !important;
