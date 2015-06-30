@@ -51,6 +51,14 @@
   font-family: "freesansmedium"; }
 
 /*button styles*/
+.btn-blk {
+  padding: 10px 20px;
+  background-color: #313335;
+  color: #ffffff; }
+
+.btn-blk:hover {
+  color: #ffffff !important; }
+
 .btn-ylw {
   padding: 10px 20px;
   background-color: #efc337;
@@ -144,7 +152,8 @@ a {
   display: none; }
 
 #port-dropdown {
-  margin: 15px; }
+  margin: 15px;
+  display: inline-block; }
   #port-dropdown a {
     cursor: pointer; }
 
@@ -223,9 +232,6 @@ footer {
       header #introduction .btn-ylw {
         font-size: 17px; }
 
-  footer #sitemap {
-    margin-top: 0px; }
-
   #resume-btn h3 {
     font-size: 18px; }
 
@@ -269,9 +275,7 @@ footer {
     font-size: 23px; }
 
   footer aside {
-    padding-top: 0px; }
-  footer #sitemap {
-    margin-top: 0; } }
+    padding-top: 0px; } }
 /* End of Media Query */
 /*Large Devices*/
 @media (min-width: 1200px) {
@@ -288,7 +292,6 @@ footer {
 
   /*header*/
   header #introduction {
-    background-color: transparent;
     color: #ffffff !important;
     padding-top: 70px; }
     header #introduction h1 {
@@ -302,13 +305,14 @@ footer {
       font-size: 23px; }
 
   footer aside {
-    padding-top: 0px; }
-  footer #sitemap {
-    margin-top: 0px; } }
+    padding-top: 0px; } }
 /* End of Media Query */
 /*Extra Large Devices*/
 @media (min-width: 1824px) {
-  /* Styles */ }
+  /* Styles */
+  #portfolio-page {
+    background-image: url("../img/port-ex-large.jpg") !important;
+    height: 884px; } }
 /* End of Media Query */
 
 /*# sourceMappingURL=styles.css.map */

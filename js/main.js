@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	$('ul#filter a').click(function() {
+	$('ul.filter a').click(function() {
 	  
-	  $('ul#filter .current').removeClass('current');
+	  $('ul.filter .current').removeClass('current');
 	$(this).parent().addClass('current');
 	
 

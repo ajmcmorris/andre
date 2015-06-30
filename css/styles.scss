@@ -91,6 +91,14 @@ $freesans:'freesansmedium';
 	font-family: $freesans;
 }
 	/*button styles*/
+.btn-blk{
+	padding: $btn-padding;
+	background-color: $black;
+	color: $white;
+}
+.btn-blk:hover{
+	color: $white !important;
+}
 .btn-ylw{
 	padding: $btn-padding;
 	background-color: $yellow;
@@ -190,6 +198,7 @@ a{
 }
 #port-dropdown{
 	margin: 15px;
+	display: inline-block;
 	a{
 		cursor: pointer;
 	}
@@ -297,13 +306,6 @@ footer{
 		}
 	}
 	
-	footer{
-		
-		#sitemap{
-			margin-top: 0px;
-		}
-	}
-
 	#resume-btn{
 		h3{
 			font-size: 18px;
@@ -369,9 +371,6 @@ footer{
 		aside{
 			padding-top: 0px;
 		}
-		#sitemap{
-			margin-top: 0;
-		}
 	}
  
 }/* End of Media Query */
@@ -393,7 +392,6 @@ footer{
  	/*header*/
 	header{
 		#introduction{
-			background-color: transparent;
 			color: $white !important;
 			padding-top: 70px;
 			h1{
@@ -416,9 +414,6 @@ footer{
 		aside{
 			padding-top: 0px;
 		}
-		#sitemap{
-			margin-top: 0px;
-		}
 	}
 
 }/* End of Media Query */
@@ -426,5 +421,9 @@ footer{
 /*Extra Large Devices*/
 @media (min-width: 1824px) {
   /* Styles */
+  #portfolio-page{
+	background-image: url("../img/port-ex-large.jpg") !important;
+	height: 884px;
+	}
 
 }/* End of Media Query */
