@@ -216,7 +216,7 @@ footer {
 
   /*header*/
   header {
-    background-image: url("../img/small-bkg.jpg") !important;
+    background-image: url("../img/port-small.jpg") !important;
     height: 475px; }
     header #introduction {
       background-color: transparent;
@@ -312,7 +312,17 @@ footer {
   /* Styles */
   #portfolio-page {
     background-image: url("../img/port-ex-large.jpg") !important;
-    height: 884px; } }
+    height: 884px; }
+    #portfolio-page #introduction {
+      padding-top: 320px; }
+      #portfolio-page #introduction h1 {
+        font-size: 70px; }
+      #portfolio-page #introduction h2 {
+        font-size: 58px; }
+      #portfolio-page #introduction #tel {
+        font-size: 38px; }
+      #portfolio-page #introduction .btn-ylw {
+        font-size: 28px; } }
 /* End of Media Query */
 
 /*# sourceMappingURL=styles.css.map */
