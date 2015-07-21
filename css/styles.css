@@ -86,7 +86,7 @@ figure {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: auto cover;
-  background: top center scroll no-repeat; }
+  background: center center scroll no-repeat; }
 
 .section-padding {
   padding: 20px 0; }
@@ -136,6 +136,9 @@ a {
 #portfolio-page h3 {
   font-size: 14px; }
 
+#twitter {
+  background-image: url("../img/twitter.jpg"); }
+
 #alex {
   background-image: url("../img/alex-port.jpg"); }
 
@@ -152,8 +155,7 @@ a {
   display: none; }
 
 #port-dropdown {
-  margin: 15px;
-  display: inline-block; }
+  margin: 15px; }
   #port-dropdown a {
     cursor: pointer; }
 
@@ -217,7 +219,7 @@ footer {
   /*header*/
   header {
     background-image: url("../img/port-small.jpg") !important;
-    height: 475px; }
+    height: 420px; }
     header #introduction {
       background-color: transparent;
       color: #ffffff !important;

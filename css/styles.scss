@@ -123,7 +123,7 @@ figure{
 }
 .bkg-position{
 	@include background-size($cover);
-	background:top center scroll no-repeat;
+	background:center center scroll no-repeat;
 }
 .section-padding{
 	padding: 20px 0;
@@ -183,6 +183,9 @@ a{
 		font-size: 14px;
 	}
 }
+#twitter{
+	background-image: url("../img/twitter.jpg");
+}
 #alex{
 	background-image: url("../img/alex-port.jpg");
 }
@@ -200,7 +203,6 @@ a{
 }
 #port-dropdown{
 	margin: 15px;
-	display: inline-block;
 	a{
 		cursor: pointer;
 	}
@@ -287,7 +289,7 @@ footer{
 	/*header*/
 	header{
 		background-image: url("../img/port-small.jpg") !important;
-		height: 475px;
+		height: 420px;
 		#introduction{
 			background-color: transparent;
 			color: $white !important;
